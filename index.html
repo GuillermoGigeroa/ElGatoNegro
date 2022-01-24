@@ -66,25 +66,22 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Categorías
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Parafernalia1</a></li>
+                            <li><a class="dropdown-item" href="#">Parafernalia2</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Otro tipo de parafernalia</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                <div class="d-flex">
+                    <input class="form-control me-2" id="searchBox" name="searchBox" placeholder="Buscar">
+                    <button class="btn btn-outline-light" id="btnBuscar">Buscar</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -98,16 +95,20 @@
                 <div class="card-body">
                     <h5 class="card-title">Encendedores</h5>
                     <p class="card-text">Los mejores encendedores del mercado para vos.</p>
-                    <a href="#" class="btn btn-outline-light">Ver producto</a>
+                    <a href="#" class="btn btn-outline-light botonComprar">Ver producto</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 <script type="text/javascript">
     $(function () {
-        $("#titulo").on("click", function () {
-            alert("Prueba de saludo al tocar el título.");
+        $(".botonComprar").on("click", function () {
+            alert("Funcionalidad de compra en desarrollo.");
+        });
+        $("#btnBuscar").on("click", function() {
+            alert("Funcionalidad de búsqueda en desarrollo");
         });
     });
 </script>
